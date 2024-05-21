@@ -19,6 +19,7 @@ public class Ejercicio05 {
 
 			mostrarMenu();
 			opc = sc.nextInt();
+			sc.nextLine();
 			switch (opc) {
 			case 1 -> {
 				System.out.println("Dime el nombre de la serie");
@@ -30,11 +31,13 @@ public class Ejercicio05 {
 			case 2 -> {
 				System.out.println("Dime el nombre de la serie");
 				nombre=sc.nextLine();
-				series.get(nombre);
 				System.out.println(nombre + " " + series.get(nombre));
 			}
 			case 3 -> {
-
+				System.out.println("Dime el nombre de la serie");
+				nombre=sc.nextLine();
+				series.remove(nombre);
+				System.out.println(nombre + " eliminada..." );
 			}
 			case 4 -> {
 				System.out.println("Saliendo...");
